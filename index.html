@@ -5,86 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!--   CSS  -->
-     <link rel = "stylesheet" href = "newspaper.css">
+     <link rel = "stylesheet" href = "./style.css">
      <!--  bootstrap   -->
- 
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-    <div class= "first">
-        <div>
-            <form>
-                <label for = "Name">First Name </label>
-                <input type ="text" id ="Fname" required>
-                <label for = "Name">Last Name </label>
-                <input type ="text" id ="Lname" required>
-            </form>
-        </div>
-        <ul></ul>
-        <div>
-            <form>
-                <label for= "email">Enter Your Email:</label>
-                <input type = "email" id= "email" name= "email">
-            </form>
-        </div>
-        <ul></ul>
-        <div class = "stars">
-            <form action="">
-                <label for = "survey">Your experience*</label>
-                <input class = "star star-5" id = "star-5" type="radio" name = "star">
-                <label class = "star star-5" for = "star-5"></label>
-                <input class = "star star-4" id = "star-4" type="radio" name = "star">
-                <label class = "star star-4" for = "star-4"></label>
-                <input class = "star star-3" id = "star-3" type="radio" name = "star">
-                <label class = "star star-3" for = "star-3"></label>
-                <input class = "star star-2" id = "star-2" type="radio" name = "star">
-                <label class = "star star-2" for = "star-2"></label>
-                <input class = "star star-1" id = "star-1" type="radio" name = "star">
-                <label class = "star star-1" for = "star-1"></label>
-            </form>
-     </div>
-     <div>
-         <p>How satisfied are you with*</p>
-         <p> very unsatisfied    unsatisfied    neutral    satisfied    very satisfied:</p>
-         <form>
-             <div>
-                 <label for="purchase"> Purchase</label>
-                 <input type="radio" name="purchase" value="very Satisfied"><input type="radio" name="purchase"><input type="radio" name="purchase"><input type="radio" name="purchase"><input type="radio" name="purchase">
-             </div>
-             <div>
-                <label for="service"> Service</label>
-                <input type="radio" name="service" value="very Satisfied"><input type="radio" name="service"><input type="radio" name="service"><input type="radio" name="service"><input type="radio" name="service">
-             </div>
-             <div>
-                <label for="company overall"> CompanyOverAll</label>
-                <input type="radio" name="company overall" value="very Satisfied"><input type="radio" name="company overall"><input type="radio" name="company overall"><input type="radio" name="company overall"><input type="radio" name="company overall">
-             </div>
-             <div>
-                 <p>
-                     How likely are you to*</p>
-             </div>
-             <div>
-                <label for="buy"> Buy from us Again</label>
-                <input type="radio" name="buy" value="very satisfied"><input type="radio" name="purchase"><input type="radio" name="purchase"><input type="radio" name="purchase"><input type="radio" name="purchase">
-             </div>
-             <div>
-                <label for="recommend"> Recommend our products to others</label>
-                <input type="radio" name="buy" value="very satisfied"><input type="radio" name="buy"><input type="radio" name="buy"><input type="radio" name="buy"><input type="radio" name="buy">
-             </div>
-             <div>
-                <label for="recommend1"> Recommend our products to others</label>  
-                <input type="radio" name="recommend1" value="very satisfied"><input type="radio" name="recommend1"><input type="radio" name="recommend1"><input type="radio" name="recommend1"><input type="radio" name="recommend1">
-             </div>
-             <div>
-                 <p> Additional comments or suggestions</p>
-                 <input type ="text" style= "font-size:18pt; height: 80px; width:500px;">"
-             </div>
-             <div>
-                 <input type="submit" value= "Submit">
-             </div>
-         </form>
-     </div>
-    </div>
+       <h1>SURVEY FORM</h1>
+       <ul></ul>
+       <div class="top">
+       <label for="fname">Name*</label><br>
+       <input type="text" id="fname" name="fname"placeholder="first name" >               
+       <input type="text"id="lname" placeholder="last name"/>
+       </div>
+       <ul></ul>
+       <div class="top">
+       <label for= "email">Email*</label><br>
+       <input type = "email" id= "email" >
+       </div>
+       <ul></ul>
+       <div class = "stars">
+       <form action="">
+       <label for = "survey">Your experience*</label><br>       
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       </form>
+       <span>Overall how would you share your experience with us*</span>
+       <ul></ul>
+       </div>
+       <div>
+       <p>How satisfied are you with*</p>
+       <table>
+       <tr>
+       <th><td>Very Unsatisfied</td></th>
+       <th>Unsatisfied</th>
+       <th>Neutral</th>
+       <th>Satisfied</th>
+       <th>Very Satisfied</th>
+       </tr>
+       <tr> 
+       <th>Purchase</th>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       </tr>
+       <tr>
+       <th>Service</th>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       </tr>
+       <tr>
+       <th>Company Overall</th>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       </tr>
+       </table>
+       <ul></ul>
+       <div>
+       <p> How likely are you to*</p>
+       </div>
+       <table>
+       <tr>
+       <th><td>Very Unlikely</td></th>
+       <th>Unlikely</th>
+       <th>Neutral</th>
+       <th>Likely</th>
+       <th>Very Likely</th>
+       </tr>
+       <tr>
+       <td>Buy from us Again</td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       </tr>
+       <tr>
+       <td> Recommend our products to others</td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       <td><input type="radio"  ></td>
+       </tr>
+       <tr>
+       <td>Recommend our products to others</td>
+       <td><input type="radio"  value="very satisfied"></td>
+       <td><input type="radio"  value="very satisfied"></td>
+       <td><input type="radio"  value="very satisfied"></td>
+       <td><input type="radio"  value="very satisfied"></td>
+       <td><input type="radio"  value="very satisfied"></td>
+       </tr>
+       </table>
+       <ul></ul>
+       <div>
+       <p> Additional comments or suggestions</p>
+       <input type ="text" style= "font-size:20pt; height: 100px; width:650px;">
+       </div>
+       <ul></ul>
+       <div>
+       <button type="submit" value="submit">Submit</button>
+       </div>
+       </form>
+       </div>
+       </div>
 </body>
 </html>
